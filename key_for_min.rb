@@ -6,12 +6,12 @@
 
 def key_for_min_value(name_hash)
   min_key = "key"
-  min_value = name_hash[name]
   name_hash.each do |name, value|
-      if value < min_value.to_i
+    min_value = name_hash[name]
+      if name_hash[name] < min_value
          min_value = value
-         min_key = name
       end
+      min_key = name
     end
     min_key
   end
